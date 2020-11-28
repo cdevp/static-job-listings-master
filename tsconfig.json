@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "jsx": "react",
+        "rootDir": "src/",
+        "outDir": "dist/",
+        "resolveJsonModule": true,
+        "sourceMap": true,
+        "strict": true,
+        "target": "ES5",
+    },
+
+    "include": ["src/**/*"],
+    "exclude": ["dist/**/*"]
+}

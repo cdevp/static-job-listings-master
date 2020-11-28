@@ -1,0 +1,326 @@
+$c-desat-dark-cyan: hsl(180, 29%, 50%);
+$c-bg-light-gray-cyan: hsl(180, 52%, 96%);
+$c-tb-light-gray-cyan: hsl(180, 31%, 95%);
+$c-dark-cyan: hsl(180, 8%, 52%);
+$c-very-dark-cyan: hsl(180, 14%, 20%);
+
+$font-size: 15px;
+$font-family: 'Spartan', sans-serif;
+$font-weight-base: 500;
+$font-weight-heavy: 700;
+
+$border-radius: 0.5rem;
+
+:root {
+  font-family: $font-family;
+  font-size: 62.5%;
+}
+
+html, body {
+  background-color: $c-bg-light-gray-cyan;
+  font-size: 1.5rem;
+  font-weight: $font-weight-base;
+  height: 208.8rem;
+  position: relative;
+  width: 100%;
+}
+
+#attribution {
+  bottom: 0%;
+  color: hsl(228, 45%, 44%);
+  display: flex;
+  flex-direction: row;
+  font-size: 1.1rem;
+  justify-content: center;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+.tag {
+  background-color: $c-tb-light-gray-cyan;
+  border-radius: 0.2rem;
+  color: $c-desat-dark-cyan;
+  display: flex;
+  flex-direction: row;
+  font-size: 1.298rem;
+  font-weight: $font-weight-heavy;
+  height: min-content;
+  letter-spacing: -0.022rem;
+}
+
+@media (min-width: 1440px) {
+  body {
+    #root {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      width: 100%;
+    }
+  
+    #listings-landing {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      width: 100%;
+  
+      #listings-landing-header {
+        background-color: $c-desat-dark-cyan;
+        height: 15.6rem;
+        position: absolute;
+        top: 0%;
+        width: 100%;
+        z-index: 1;
+      } 
+  
+      #filter-bar {
+        align-items: center;
+        background-color: white;
+        border-radius: $border-radius;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        min-height: 7.2rem;
+        margin-top: 12rem;
+        position: absolute;
+        width: 111rem;
+        z-index: 2;
+
+        #filter-tags {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          margin-left: 4rem;
+
+          .filter-tag {
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            
+            .filter-text {
+              border-radius: 0.4rem 0rem 0rem 0.4rem; 
+              padding-bottom: 0.8rem;
+              padding-left: 0.9rem;
+              padding-right: 0.9rem;
+              padding-top: 1.0rem;
+              position: relative;
+            }
+  
+            .remove {
+              align-items: center;
+              border-radius: 0rem 0.4rem 0.4rem 0rem;
+              background-color: $c-desat-dark-cyan;
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              height: 3.2rem;
+              margin-right: 1.6rem;
+              position: relative;
+              width: 3.2rem;
+  
+              img {
+                object-fit: contain;
+                position: relative;
+              }
+            }
+  
+            .remove:hover {
+              background-color: $c-very-dark-cyan;
+            }
+          }
+        }
+
+        #filter-clear {
+          color: $c-desat-dark-cyan;
+          cursor: pointer;
+          font-size: 1.298rem;
+          font-weight: $font-weight-heavy;
+          margin-right: 4rem;
+          margin-top: 0.2rem;
+        }
+
+        #filter-clear:hover {
+          text-decoration: underline;
+        }
+      }
+
+      #listings {
+        display: flex;
+        flex-direction: column;
+        margin-top: 23.2rem;
+        position: relative;
+        width: 111rem;
+
+        .listing-row {
+          background-color: white;
+          border-radius: $border-radius;
+          display: flex;
+          flex-direction: row;
+          height: 15.2rem;
+          justify-content: space-between;
+          margin-bottom: 2.4rem;
+          position: relative;
+          width: 100%;
+
+          .profile-section {
+            display: flex;
+            flex-direction: row;
+            height: 8.8rem;
+            margin-top: 3.2rem;
+
+            .company-logo {
+              display: flex;
+              margin-left: 4rem;
+              position: relative;
+            }
+
+            .profile-data {
+              display: flex;
+              flex-direction: column;
+              margin-left: 2.4rem;
+
+              .profile-top-bar {
+                align-items: center;
+                color: $c-tb-light-gray-cyan;
+                display: flex;
+                flex-direction: row;
+                font-weight: $font-weight-heavy;
+                height: 2.4rem;
+  
+                .profile-company {
+                  color: $c-desat-dark-cyan;
+                  font-size: 1.398rem;
+                  font-weight: $font-weight-heavy;
+                }
+  
+                .highlight-bar {
+                  align-items: center;
+                  background-color: $c-desat-dark-cyan;
+                  border-radius: 2rem;
+                  display: flex;
+                  flex-direction: row;
+                  font-size: 1.1rem;
+                  height: 100%;
+                  justify-content: center;
+  
+                  .highlight-text {
+                    margin-top: 0.4rem;
+                  }
+                }
+  
+                .profile-new {
+                  margin-left: 1.7rem;
+                  width: 5.1rem;
+                }
+  
+                .profile-featured {
+                  background-color: $c-very-dark-cyan;
+                  margin-left: 0.8rem;
+                  width: 7.9rem;
+                }
+              }
+
+              .profile-position {
+                cursor: pointer;
+                margin-top: 1.2rem;
+
+                .position-text {
+                  color: $c-very-dark-cyan;
+                  display: inline-block;
+                  font-size: 1.8rem;
+                  font-weight: $font-weight-heavy;
+                }
+              }
+
+              .profile-position:hover .position-text {
+                color: $c-desat-dark-cyan;
+              }
+              
+              .profile-bottom-bar {
+                color: $c-dark-cyan;
+                display: flex;
+                flex-direction: row;
+                margin-top: 1.15rem;
+                word-spacing: -0.10rem;
+
+                .profile-separator {
+                  align-items: center;
+                  display: flex;
+                  flex-direction: row;
+                  font-size: 1.6rem;
+                  margin-left: 1.5rem;
+                  margin-right: 1.4rem;
+                  word-spacing: 0rem;
+                }
+
+                .profile-separator:nth-child(4) {
+                  margin-left: 1.4rem;
+                  margin-right: 1.5rem;
+                }
+              }
+            }
+          }
+          .keywords {
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+
+            .keyword {
+              border-radius: 0.2rem;
+              cursor: pointer;
+              margin-right: 1.65rem;
+              padding-bottom: 0.8rem;
+              padding-left: 0.9rem;
+              padding-right: 0.9rem;
+              padding-top: 1.0rem;
+            }
+
+            .keyword:hover {
+              color: $c-tb-light-gray-cyan;
+              background-color: $c-desat-dark-cyan;
+            }
+
+          }
+
+          #keyword-3 {
+            .keyword:nth-child(3) {
+              order: 5;
+            }
+            .keyword:nth-child(4) {
+              ordeR: 3;
+            }
+            .keyword:nth-child(5) {
+              order: 4;
+            }
+          }
+
+          #keyword-5, #keyword-7, #keyword-9 {
+            .keyword:nth-child(4) {
+              order: 5;
+            }
+          }
+
+          #keyword-8 {
+            .keyword:nth-child(3) {
+              order: 4;
+            }
+            .keyword:nth-child(4) {
+              order: 3;
+            }
+            .keyword:nth-child(5) {
+              order: 5;
+            }
+          }
+
+          #keyword-10 {
+            .keyword:nth-child(3) {
+              order: 5;
+            }
+          }
+        }
+      }
+    }
+  }
+}
