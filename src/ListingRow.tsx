@@ -13,7 +13,7 @@ class ListingRow extends React.Component<ListingRowProps, any> {
   render() {
     const $: listingType = this.props.rowData;
     return (
-      <div className="listing-row">
+      <div className={$.featured ? 'listing-row featured-row': 'listing-row'}>
         <div className="profile-section">
           <img className="company-logo" src={$.logo} alt="company logo" />
           <div className="profile-data">
@@ -35,6 +35,7 @@ class ListingRow extends React.Component<ListingRowProps, any> {
             </div>
           </div>
         </div>
+        <div id="profile-mobile-divider"></div>
         <div className="keywords" id={'keyword-' + $.id}>
           <span className="keyword-text keyword tag" data-role={$.role} onClick={() => this.props.addFilter($.role)}>
             {$.role}

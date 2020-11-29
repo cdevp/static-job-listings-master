@@ -34,8 +34,6 @@ class FilterBar extends React.Component<filterBarProps, any> {
     else {
       return <div id="filter-bar-empty"></div>
     }
-
-
   }
 }
 

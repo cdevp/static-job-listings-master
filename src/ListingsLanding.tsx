@@ -34,12 +34,18 @@ class ListingsLanding extends React.Component<any, listingsState> {
   render() {
     return (
       <div id="listings-landing">
-        <img id="listings-landing-header" src="./images/bg-header-desktop.svg" 
+        <img id="listings-landing-header-desktop" src="./images/bg-header-desktop.svg" 
+          alt="header pattern" />
+        <img id="listings-landing-header-mobile" src="./images/bg-header-mobile.svg"
           alt="header pattern" />
         <FilterBar filterTags={this.state.filters.size == 0 ? null : this.state.filters} 
           removeFilter={this.removeFilter} />
         <Listings filterTags = {this.state.filters.size == 0 ? null : this.state.filters}
           addFilter={this.addFilter} />
+        <div id="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+          Coded by <a href="#">cdevp</a>.
+        </div>
       </div>
     );
   }
