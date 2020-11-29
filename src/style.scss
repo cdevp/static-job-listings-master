@@ -337,10 +337,81 @@ html, body {
             }
           }
         }
+
+        .featured-row:before {
+          background-color: $c-desat-dark-cyan;
+          border-radius: $border-radius 0rem 0rem $border-radius;
+          content: "";
+          left: 0rem;
+          height: 100%;
+          position: absolute;
+          width: 0.5rem;
+        }
+
       }
     }
   }
 }
+@media (min-width: 3041px) {
+  :root {
+    font-size: 164.5%;
+  }
+}
+
+@media (max-width: 3040px) {
+  :root {
+    font-size: 158.5%;
+  }
+}
+
+@media (max-width: 2940px) {
+  :root {
+    font-size: 152.5%;
+  }
+}
+
+@media (max-width: 2840px) {
+  :root {
+    font-size: 146.5%;
+  }
+}
+
+@media (max-width: 2740px) {
+  :root {
+    font-size: 140.5%;
+  }
+}
+
+@media (max-width: 2640px) {
+  :root {
+    font-size: 134.5%;
+  }
+}
+
+@media (max-width: 2540px) {
+  :root {
+    font-size: 128.5%;
+  }
+}
+
+@media (max-width: 2440px) {
+  :root {
+    font-size: 122.5%;
+  }
+}
+
+@media (max-width: 2340px) {
+  :root {
+    font-size: 116.5%;
+  }
+}
+
+@media (max-width: 2240px) {
+  :root {
+    font-size: 110.5%;
+  }
+}
+
 @media (max-width: 2140px) {
   :root {
     font-size: 104.5%;
